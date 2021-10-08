@@ -1,4 +1,4 @@
-# Display message to the standard output
+
 print("System Failure Imminent!")
 print("System reboot has been initiated...")
 print()
@@ -36,7 +36,7 @@ print("##########")
 # Ask user to enter their name
 age = int(input("age?"))
 height = float(input("height? (meters)"))
-weight = (float(input("weight? (kg)")))
+weight = float(input("weight? (kg)"))
 bmi=weight/(height*height)
 print(name," you are ", age," years old and your bmi is ", bmi)
 

@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import random
+import csv
 # x = [0, 5, 10]
 # y = [0, 50 ,100]
 # plt.plot(x, y)
@@ -98,10 +99,15 @@ import random
 # run()
 
 def read_data(data):
-    with open(data):
-        print(data)
+    temps = []
+    with open(data) as file:
+        for line in file:
+            temps.append(float(line.strip()))
+    print(temps)
+    return temps
 
 def run():
     data = "C:/Users/5woodl59/OneDrive - Solent University/Documents/python imports"
+    read_data(data)
 
 run()
